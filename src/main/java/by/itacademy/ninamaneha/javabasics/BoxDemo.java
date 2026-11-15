@@ -2,19 +2,14 @@ package by.itacademy.ninamaneha.javabasics;
 
 public class BoxDemo {
     public static void main(String[] args) {
-        Box mybox = new Box();
+        Box mybox1 = new Box();
         Box mybox2 = new Box();
         double vol;
 
-        mybox.width = 10;
-        mybox.height = 20;
-        mybox.depth = 15;
+        mybox1.setDim(10, 20, 15);
+        mybox2.setDim(3, 6, 9);
 
-        mybox2.width = 3;
-        mybox2.height = 6;
-        mybox2.depth = 9;
-
-        vol = mybox.volume();
+        vol = mybox1.volume();
         System.out.println("Oбъeм равен " + vol);
 
         vol = mybox2.volume();
