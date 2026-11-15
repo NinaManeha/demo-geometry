@@ -3,16 +3,21 @@ package by.itacademy.ninamaneha.javabasics;
 public class BoxDemo {
     public static void main(String[] args) {
         Box mybox = new Box();
+        Box mybox2 = new Box();
         double vol;
+
         mybox.width = 10;
         mybox.height = 20;
         mybox.depth = 15;
-        mybox.volume();
 
-        Box mybox2 = new Box();
         mybox2.width = 3;
         mybox2.height = 6;
         mybox2.depth = 9;
-        mybox2.volume();
+
+        vol = mybox.volume();
+        System.out.println("Oбъeм равен " + vol);
+
+        vol = mybox2.volume();
+        System.out.println("Oбъeм равен " + vol);
     }
 }
